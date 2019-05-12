@@ -1,11 +1,11 @@
 package Library;
 
-import Library.Utils.LoadBooks;
-import Library.Utils.LoadUsers;
-import Library.Utils.SaveBooks;
+import Library.Utils.*;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -15,13 +15,13 @@ public class Main {
     static List<Book> books = loadBooks.getList();
     private static LoadUsers loadUsers = new LoadUsers();
     static List<User> users = loadUsers.getList();
+    static List<Category> categories = new LoadCategories().getCategoriesList();
+    static List<Author> authors = new LoadAuthors().getAuthorsList();
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-
         mainApp();
-
     }
 
     public static void mainApp() {
@@ -87,8 +87,8 @@ public class Main {
     public static void prinBooks() {
         if (!books.isEmpty()) {
             StringBuilder s = new StringBuilder();
-            s.append("|\tTytył\t|\tIBSN\t|\tRok wydania\t|\n");
-            books.forEach(book -> s.append("| " + book.getTitle() + "\t|\t" + book.getIbsn() + "\t|\t" + book.getYear() + "\t|\n"));
+            //s.append("|ID|\tTytył\t|\tIBSN\t|\tRok wydania\t|\tRok wydania\t|\tAutorzy\t|\tKategoria\n");
+            books.forEach(book -> s.append(book.toPrintFormat()));
             System.out.println(s.toString());
         } else {
             System.out.println("Lista jest pusta");
@@ -143,24 +143,40 @@ public class Main {
         String title;
         String ibsn;
         int year;
+        String binding;
+        int catId;
+        Book bookWithMaxId = books.stream().max(Comparator.comparing(Book::getId)).get();
+
         System.out.print("Podaj tytuł ksiązki: ");
         title = scanner.nextLine();
         System.out.print("Podaj ibsn ksiązki: ");
         ibsn = scanner.nextLine();
         System.out.print("Podaj rok wydania ksiązki: ");
         year = Integer.parseInt(scanner.nextLine());
+        System.out.print("Podaj rodzaj oprawy(T - twarda, M - miękka: ");
+        binding = scanner.nextLine();
+        System.out.print("Podaj ID autorów po przecinku(");
+        authors.forEach(author -> System.out.print(author.getId() + " - " + author.getName() + "; "));
+        System.out.print("): ");
+        String authorsIds = scanner.nextLine();
+        System.out.print("Podaj numer ID kategorii: ");
+        catId = Integer.parseInt(scanner.nextLine());
 
-        books.add(new Book(title, ibsn, year));
+//        if (Validator.validateBook(title, ibsn, year, binding, authorsIds)) {
+            books.add(new Book(bookWithMaxId.getId() + 1, title, ibsn, year, binding, loadBooks.getAuthors(authorsIds), categories.get(catId)));
+//        } else {
+//            System.out.println("Podano błęne dane!");
+//        }
     }
 
     public static void deleteBook() {
         System.out.println("Usuwanie ksiązki po tytule.\n");
         System.out.println("Podaj tytuł ksiązki do usunięcia: ");
         String title = scanner.nextLine();
-        boolean deleteSuccess = books.removeIf(book-> book.getTitle().trim().equals(title.trim()));
-        if (deleteSuccess){
+        boolean deleteSuccess = books.removeIf(book -> book.getTitle().trim().equals(title.trim()));
+        if (deleteSuccess) {
             System.out.println("Ksiązka " + title + " została usunięta");
-        }else{
+        } else {
             System.out.println("Podana książka nie istnieje");
         }
 
@@ -171,15 +187,14 @@ public class Main {
         System.out.println("Podaj tytuł książki");
         String title = scanner.nextLine();
 
-        if(books.stream().filter(book->book.getTitle().trim().equals(title)).count() >= 1){
+        if (books.stream().filter(book -> book.getTitle().trim().equals(title)).count() >= 1) {
             System.out.print("Podaj nowy rok wydania: ");
             int newYear = Integer.parseInt(scanner.nextLine());
-            books.stream().filter(book-> book.getTitle().trim().equals(title)).forEach(book-> book.setYear(newYear));
+            books.stream().filter(book -> book.getTitle().trim().equals(title)).forEach(book -> book.setYear(newYear));
             System.out.println("Rok wydania ksiązki " + title + " został zmieniony");
-        }else{
+        } else {
             System.out.println("Podanej książki nie ma w bazie");
         }
-
 
 
     }
@@ -188,8 +203,8 @@ public class Main {
         System.out.println("Zapisywanie listy ksiązek do pliku\n");
         System.out.print("Podaj nazwe pliku który chcesz zapisac(bez .csv; istniejący plik zostane zastąpiony): ");
         String fileName = scanner.nextLine();
-        Path path = Paths.get("src", "main", "resources", fileName+".csv");
-        if(SaveBooks.saveBooksToCsv(books, path)){
+        Path path = Paths.get("src", "main", "resources", fileName + ".csv");
+        if (SaveBooks.saveBooksToCsv(books, path)) {
             System.out.println("Lista została zapisana do pliku " + path.getFileName());
         }
     }
