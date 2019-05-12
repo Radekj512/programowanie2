@@ -15,8 +15,9 @@ public class LoadUsers {
         Path path = Paths.get("src", "main", "resources", "users.csv");
 
         try {
-            Files.lines(path).map(line -> line.split(";"))
-                    .forEach(user -> usersList.add(new User(user[0],user[1],user[2],user[3])));
+            Files.lines(path).filter(line -> !line.isEmpty())
+                    .map(line -> line.split(";"))
+                    .forEach(user -> usersList.add(new User(user[1],user[2],user[3],user[4])));
         } catch (IOException e) {
             System.out.println("Failed to load file " + path.getFileName().toString());
             // e.printStackTrace();

@@ -8,12 +8,14 @@ import java.nio.file.StandardOpenOption;
 
 
 public class User {
+    private static int id;
     private String name;
     private String lastName;
     private String email;
     private String password;
 
     public User(String name, String lastName, String email, String password) {
+        this.id++;
         this.name = name;
         this.lastName = lastName;
         this.email = email;
@@ -38,10 +40,16 @@ public class User {
     }
 
     public void addToFile() {
-        String user = "\n"+name + ";" + lastName + ";" + email + ";" + password;
+        String firstUser = id + ";" + name + ";" + lastName + ";" + email + ";" + password;
+        String nextUser = "\n" + id + ";" + name + ";" + lastName + ";" + email + ";" + password;
+
         Path path = Paths.get("src", "main", "resources", "users.csv");
         try {
-            Files.write(path, user.getBytes(), StandardOpenOption.APPEND);
+            if (Files.lines(path).toArray().length == 0) {
+                Files.write(path, firstUser.getBytes(), StandardOpenOption.APPEND);
+            }else{
+                Files.write(path, nextUser.getBytes(), StandardOpenOption.APPEND);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

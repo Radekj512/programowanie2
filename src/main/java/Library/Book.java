@@ -23,6 +23,12 @@ public class Book {
         return year;
     }
 
+    public void setYear(int year){
+        this.year = year;
+    }
+    public String toCsv(){
+        return ""+title+";"+ibsn+";"+year;
+    }
     @Override
     public String toString() {
         return ""+title + " " + ibsn + " " + year;
