@@ -1,0 +1,11 @@
+Library\Author.class
+Library\User.class
+Library\Utils\LoadUsers.class
+Library\Main.class
+Library\Utils\LoadAuthors.class
+Library\Utils\LoadBooks.class
+Library\Utils\SaveBooks.class
+Library\Category.class
+Library\Utils\Validator.class
+Library\Utils\LoadCategories.class
+Library\Book.class

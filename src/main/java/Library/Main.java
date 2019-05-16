@@ -2,13 +2,13 @@ package Library;
 
 import Library.Utils.*;
 
+import java.io.Console;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
+
 
 public class Main {
     private static LoadBooks loadBooks = new LoadBooks();
@@ -26,12 +26,12 @@ public class Main {
 
     public static void mainApp() {
 
-//        boolean signedIn = false;
-//        if (!users.isEmpty()) {
-//            do {
-//                signedIn = signIn();
-//            } while (!signedIn);
-//        }
+        boolean signedIn = false;
+        if (!users.isEmpty()) {
+            do {
+                signedIn = signIn();
+            } while (!signedIn);
+        }
         int option = 0;
         do {
             printMenu();
@@ -125,10 +125,13 @@ public class Main {
     public static boolean signIn() {
         String tmpMail;
         String tmpPassword;
+        java.io.Console console = System.console();
         System.out.print("Podaj adres email: ");
         tmpMail = scanner.nextLine();
         System.out.print("Podaj haslo: ");
         tmpPassword = scanner.nextLine();
+       //tmpPassword = new String(console.readPassword("PAss: "));
+
 
         for (User user : users) {
             if (user.getEmail().trim().equals(tmpMail.trim()) && user.getPassword().trim().equals(tmpPassword.trim())) {
