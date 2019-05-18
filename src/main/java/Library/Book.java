@@ -1,4 +1,4 @@
-package Library;
+package library;
 
 import java.util.List;
 
@@ -67,7 +67,6 @@ public class Book {
     }
     public String toPrintFormat(){
         StringBuilder s = new StringBuilder();
-
         s.append("ID: ").append(id).append("\n");
         s.append("Tytuł: ").append(title).append("\n");
         s.append("ibsn: ").append(ibsn).append("\n");

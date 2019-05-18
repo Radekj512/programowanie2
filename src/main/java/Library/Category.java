@@ -1,4 +1,4 @@
-package Library;
+package library;
 
 public class Category {
 private  int id;

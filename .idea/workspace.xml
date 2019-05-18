@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2202e4-54c4-4305-be4b-7c7e753e00c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Library/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Library/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Library/Utils/LoadAuthors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Library/Utils/LoadCategories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Library/Utils/Validator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Library/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Library/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/LoadBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Library/Utils/LoadBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/a.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/a.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Library/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Library/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Library/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Library/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Library/Utils/LoadBooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Library/Utils/LoadBooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Library/Utils/SaveBooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Library/Utils/SaveBooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/books.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/LoadAuthors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/LoadAuthors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/LoadBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/LoadCategories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/LoadCategories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/LoadUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/LoadUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/SaveBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/SaveBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/books.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test.csv" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,61 +28,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Library/Utils/LoadBooks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Library/Category.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-              <folding>
-                <element signature="e#274#275#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Library/Utils/LoadCategories.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/a.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Library/Utils/Validator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
-              <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+              <caret line="54" column="119" selection-start-line="54" selection-start-column="119" selection-end-line="54" selection-end-column="119" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="104" column="16" lean-forward="true" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,57 +52,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Library/Book.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/Validator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+            <state relative-caret-position="238">
+              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#249#250#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadUsers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
               <folding>
                 <element signature="e#606#607#0" expanded="true" />
                 <element signature="e#631#632#0" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Library/Author.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding>
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
-                <element signature="e#302#303#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Library/Utils/LoadAuthors.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="27" column="90" selection-start-line="27" selection-start-column="90" selection-end-line="27" selection-end-column="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#786#787#0" expanded="true" />
-                <element signature="e#816#817#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Library/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="165" column="85" selection-start-line="165" selection-start-column="85" selection-end-line="165" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/books.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="53" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="53" />
+            <state relative-caret-position="85">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
             </state>
           </provider>
           <provider editor-type-id="csv-table-editor">
@@ -203,7 +147,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Library/Utils/LoadUsers.java" />
         <option value="$PROJECT_DIR$/src/main/java/Library/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/users.csv" />
-        <option value="$PROJECT_DIR$/src/main/resources/books.csv" />
         <option value="$PROJECT_DIR$/src/main/resources/test.csv" />
         <option value="$PROJECT_DIR$/src/main/resources/a.csv" />
         <option value="$PROJECT_DIR$/src/main/java/Library/Utils/SaveBooks.java" />
@@ -216,6 +159,13 @@
         <option value="$PROJECT_DIR$/src/main/java/Library/Utils/Validator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Library/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Library/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/Utils/LoadUsers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/utils/LoadUsers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/books.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/utils/Validator.java" />
       </list>
     </option>
   </component>
@@ -253,6 +203,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,7 +235,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Library" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
@@ -292,8 +243,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Library" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
@@ -336,11 +287,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557668985232" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558163973899" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -365,7 +315,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Library.Main" />
+      <option name="MAIN_CLASS_NAME" value="library.Main" />
       <module name="Programowanie2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -406,7 +356,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26666668" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26972282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -461,39 +411,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/users.csv">
-      <provider editor-type-id="text-editor">
-        <state>
-          <caret column="30" lean-forward="true" selection-start-column="13" selection-end-column="30" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
           <caret column="10" selection-start-column="10" selection-end-column="10" />
         </state>
       </provider>
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret column="30" lean-forward="true" selection-start-column="13" selection-end-column="30" />
+        </state>
+      </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Library/Utils/LoadUsers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/eee.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/b.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/test.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Library/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="48" column="83" selection-start-line="48" selection-start-column="83" selection-end-line="48" selection-end-column="83" />
@@ -503,7 +437,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Library/Utils/SaveBooks.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/SaveBooks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="15" column="58" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="58" />
@@ -536,7 +470,7 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Library/Utils/LoadCategories.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadCategories.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
@@ -546,27 +480,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/books.csv">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="53" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="53" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Library/Author.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="221">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
           <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -581,70 +503,98 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Library/Category.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Author.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Library/Utils/LoadAuthors.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadAuthors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="459">
           <caret line="27" column="90" selection-start-line="27" selection-start-column="90" selection-end-line="27" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Library/Utils/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/test.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Library/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="165" column="85" selection-start-line="165" selection-start-column="85" selection-end-line="165" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Library/Utils/LoadBooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Library/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+        <state relative-caret-position="501">
+          <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
           <folding>
             <element signature="e#606#607#0" expanded="true" />
             <element signature="e#631#632#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/books.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="104" column="16" lean-forward="true" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="54" column="119" selection-start-line="54" selection-start-column="119" selection-end-line="54" selection-end-column="119" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
           </folding>
         </state>
       </provider>

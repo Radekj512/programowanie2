@@ -1,7 +1,6 @@
-package Library.Utils;
+package library.utils;
 
-import Library.Author;
-import Library.Category;
+import library.Category;
 
 import java.io.IOException;
 import java.nio.file.Files;
