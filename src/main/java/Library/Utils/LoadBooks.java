@@ -20,7 +20,7 @@ public class LoadBooks {
     private List<Category> categories = new LoadCategories().getCategoriesList();
 
     {
-        Path path = Paths.get("src", "main", "resources", "a.csv");
+        Path path = Paths.get("src", "main", "resources", "books.csv");
 
         try {
             //List<Author> authorsList = new ArrayList<>();

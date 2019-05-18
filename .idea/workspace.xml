@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2202e4-54c4-4305-be4b-7c7e753e00c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/utils/BookFunctions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/library/utils/BookFunctionsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Category.java" afterDir="false" />
@@ -15,7 +18,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/SaveBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/SaveBooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/Validator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/books.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Library/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Library/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Library/Utils/LoadBooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Library/Utils/LoadBooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/books.csv" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="54" column="119" selection-start-line="54" selection-start-column="119" selection-end-line="54" selection-end-column="119" />
+            <state relative-caret-position="374">
+              <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/library/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="104" column="16" lean-forward="true" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
+            <state relative-caret-position="170">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,11 +56,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/a.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/Validator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#207#208#0" expanded="true" />
@@ -71,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadUsers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="32" />
+              <caret line="19" column="178" selection-start-line="19" selection-start-column="178" selection-end-line="19" selection-end-column="178" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,14 +93,59 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/library/Book.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/BookFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+            <state relative-caret-position="190">
+              <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
               <folding>
-                <element signature="e#606#607#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2422#2423#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/library/utils/BookFunctionsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="120" column="59" selection-start-line="120" selection-start-column="59" selection-end-line="120" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#917#918#0" expanded="true" />
+                <element signature="e#1607#1608#0" expanded="true" />
+                <element signature="e#1637#1638#0" expanded="true" />
+                <element signature="e#1719#1720#0" expanded="true" />
+                <element signature="e#1783#1784#0" expanded="true" />
+                <element signature="e#1855#1856#0" expanded="true" />
+                <element signature="e#1885#1886#0" expanded="true" />
+                <element signature="e#1986#1987#0" expanded="true" />
+                <element signature="e#2063#2064#0" expanded="true" />
+                <element signature="e#2111#2112#0" expanded="true" />
+                <element signature="e#2141#2142#0" expanded="true" />
+                <element signature="e#2220#2221#0" expanded="true" />
+                <element signature="e#2281#2282#0" expanded="true" />
+                <element signature="e#2340#2341#0" expanded="true" />
+                <element signature="e#2370#2371#0" expanded="true" />
+                <element signature="e#2467#2468#0" expanded="true" />
+                <element signature="e#2535#2536#0" expanded="true" />
+                <element signature="e#2599#2600#0" expanded="true" />
+                <element signature="e#2628#2629#0" expanded="true" />
+                <element signature="e#2732#2733#0" expanded="true" />
+                <element signature="e#2761#2762#0" expanded="true" />
+                <element signature="e#3276#3277#0" expanded="true" />
+                <element signature="e#3341#3342#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -96,7 +154,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/books.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
             </state>
           </provider>
           <provider editor-type-id="csv-table-editor">
@@ -110,6 +168,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -134,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/LoadBooks.java" />
@@ -148,7 +206,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Library/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/users.csv" />
         <option value="$PROJECT_DIR$/src/main/resources/test.csv" />
-        <option value="$PROJECT_DIR$/src/main/resources/a.csv" />
         <option value="$PROJECT_DIR$/src/main/java/Library/Utils/SaveBooks.java" />
         <option value="$PROJECT_DIR$/src/main/java/Library/Utils/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/Library/Category.java" />
@@ -160,12 +217,16 @@
         <option value="$PROJECT_DIR$/src/main/java/Library/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Library/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/Utils/LoadUsers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/library/utils/LoadUsers.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/library/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/books.csv" />
-        <option value="$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/utils/Validator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/utils/LoadUsers.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/a.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/library/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/books.csv" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/library/utils/BookFunctions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/library/utils/BookFunctionsTest.java" />
       </list>
     </option>
   </component>
@@ -255,33 +316,37 @@
             </path>
             <path>
               <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Programowanie2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Programowanie2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Programowanie2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Programowanie2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -290,14 +355,22 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558163973899" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558172666333" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="library.utils" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
@@ -313,20 +386,93 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="library.Main" />
+  <component name="RunManager" selected="JUnit.BookFunctionsTest">
+    <configuration name="BookFunctionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Programowanie2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="library.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="library.utils" />
+      <option name="MAIN_CLASS_NAME" value="library.utils.BookFunctionsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookFunctionsTest.averageOfBookYearsStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Programowanie2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="library.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="library.utils" />
+      <option name="MAIN_CLASS_NAME" value="library.utils.BookFunctionsTest" />
+      <option name="METHOD_NAME" value="averageOfBookYearsStream" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookFunctionsTest.isAllBooksAreNewerThan2000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Programowanie2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="library.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="library.utils" />
+      <option name="MAIN_CLASS_NAME" value="library.utils.BookFunctionsTest" />
+      <option name="METHOD_NAME" value="isAllBooksAreNewerThan2000" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookFunctionsTest.isAllBooksAreNewerThan2000Stream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Programowanie2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="library.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="library.utils" />
+      <option name="MAIN_CLASS_NAME" value="library.utils.BookFunctionsTest" />
+      <option name="METHOD_NAME" value="isAllBooksAreNewerThan2000Stream" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookFunctionsTest.isThereAnyBookBefore2003" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Programowanie2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="library.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="library.utils" />
+      <option name="MAIN_CLASS_NAME" value="library.utils.BookFunctionsTest" />
+      <option name="METHOD_NAME" value="isThereAnyBookBefore2003" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BookFunctionsTest" />
+        <item itemvalue="JUnit.BookFunctionsTest.isAllBooksAreNewerThan2000Stream" />
+        <item itemvalue="JUnit.BookFunctionsTest.isAllBooksAreNewerThan2000" />
+        <item itemvalue="JUnit.BookFunctionsTest.isThereAnyBookBefore2003" />
+        <item itemvalue="JUnit.BookFunctionsTest.averageOfBookYearsStream" />
       </list>
     </recent_temporary>
   </component>
@@ -342,6 +488,38 @@
       <updated>1557568176271</updated>
     </task>
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="BookFunctionsTest_findOldestStream - 2019.05.18 at 11h 05m 31s.xml">
+      <configuration name="BookFunctionsTest.findOldestStream" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookFunctionsTest_findYoungestBook - 2019.05.18 at 11h 06m 15s.xml">
+      <configuration name="BookFunctionsTest.findYoungestBook" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookFunctionsTest_findYoungestBookStream - 2019.05.18 at 11h 06m 18s.xml">
+      <configuration name="BookFunctionsTest.findYoungestBookStream" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookFunctionsTest_sumOfYears - 2019.05.18 at 11h 08m 00s.xml">
+      <configuration name="BookFunctionsTest.sumOfYears" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookFunctionsTest_sumOfYearsStream - 2019.05.18 at 11h 08m 03s.xml">
+      <configuration name="BookFunctionsTest.sumOfYearsStream" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookFunctionsTest_averageOfBookYears - 2019.05.18 at 11h 10m 38s.xml">
+      <configuration name="BookFunctionsTest.averageOfBookYears" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookFunctionsTest_averageOfBookYears - 2019.05.18 at 11h 35m 30s.xml">
+      <configuration name="BookFunctionsTest.averageOfBookYears" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookFunctionsTest_averageOfBookYears - 2019.05.18 at 11h 37m 47s.xml">
+      <configuration name="BookFunctionsTest.averageOfBookYears" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookFunctionsTest_averageOfBookYears - 2019.05.18 at 11h 39m 57s.xml">
+      <configuration name="BookFunctionsTest.averageOfBookYears" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookFunctionsTest_averageOfBookYearsStream - 2019.05.18 at 11h 40m 21s.xml">
+      <configuration name="BookFunctionsTest.averageOfBookYearsStream" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,13 +566,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -493,16 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/a.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/library/Author.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -544,20 +705,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadUsers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="32" />
+          <caret line="19" column="178" selection-start-line="19" selection-start-column="178" selection-end-line="19" selection-end-column="178" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/a.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/books.csv___jb_old___">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/books.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
       <provider editor-type-id="text-editor" />
@@ -567,34 +761,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/library/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="104" column="16" lean-forward="true" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="54" column="119" selection-start-line="54" selection-start-column="119" selection-end-line="54" selection-end-column="119" />
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/BookFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2422#2423#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/Validator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/library/utils/BookFunctionsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        <state relative-caret-position="367">
+          <caret line="120" column="59" selection-start-line="120" selection-start-column="59" selection-end-line="120" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#1607#1608#0" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1783#1784#0" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+            <element signature="e#1885#1886#0" expanded="true" />
+            <element signature="e#1986#1987#0" expanded="true" />
+            <element signature="e#2063#2064#0" expanded="true" />
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2141#2142#0" expanded="true" />
+            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2370#2371#0" expanded="true" />
+            <element signature="e#2467#2468#0" expanded="true" />
+            <element signature="e#2535#2536#0" expanded="true" />
+            <element signature="e#2599#2600#0" expanded="true" />
+            <element signature="e#2628#2629#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2761#2762#0" expanded="true" />
+            <element signature="e#3276#3277#0" expanded="true" />
+            <element signature="e#3341#3342#0" expanded="true" />
           </folding>
         </state>
       </provider>
