@@ -1,11 +1,13 @@
 package library.utils;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import library.Book;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.*;
 
 public class BookFunctions {
 
@@ -20,7 +22,7 @@ public class BookFunctions {
 
     }
 
-    public Book findIsbnStram(String isbn, List<Book> bookList) {
+    public Book findIsbnStream(String isbn, List<Book> bookList) {
         return bookList.stream().filter(book -> book.getIbsn().equalsIgnoreCase(isbn)).findFirst().orElse(null);
     }
 
@@ -29,14 +31,14 @@ public class BookFunctions {
         if (bookList.size() < 2) {
             return null;
         }
-        for (int i = bookList.size()-1; i > bookList.size() - 3; i--) {
+        for (int i = bookList.size() - 1; i > bookList.size() - 3; i--) {
             returnList.add(bookList.get(i));
         }
         return returnList;
     }
 
     public List<Book> getLastTwoBooksStream(List<Book> bookList) {
-        return bookList.stream().skip(bookList.size() - 2).collect(Collectors.toList());
+        return bookList.stream().skip(bookList.size() - 2).collect(toList());
     }
 
     public Book findOldestBook(List<Book> bookList) {
@@ -130,4 +132,53 @@ public class BookFunctions {
     public boolean isThereAnyBookBefore2003Stream(List<Book> bookList) {
         return bookList.stream().anyMatch(book -> book.getYear() < 2003);
     }
+
+    public List<Book> getBooksWithTitleStartingWithCAndYoungerThan2007(List<Book> bookList) {
+        return bookList.stream().filter(book -> book.getTitle().startsWith("C")).filter(book -> book.getYear() > 2007).collect(toList());
+    }
+
+    public List<Book> add100YearsToEveryBook(List<Book> bookList) {
+        List<Book> tmpList = bookList;
+        tmpList.forEach(book -> book.setYear(book.getYear() + 100));
+        return tmpList;
+    }
+
+    public Map<String, Book> getIsbnBookMap(List<Book> bookList) {
+        Map<String, Book> booksMap = new HashMap<>();
+        bookList.forEach(book -> booksMap.put(book.getIbsn(), book));
+        return booksMap;
+    }
+
+    public void sortBooksByYearAscending(List<Book> bookList) {
+        Comparator<Book> comparator = Comparator.comparingInt(Book::getYear);
+        bookList.sort(comparator);
+    }
+
+    public void sortBooksByYearDescending(List<Book> bookList) {
+        Comparator<Book> comparator = Comparator.comparingInt(Book::getYear).reversed();
+        bookList.sort(comparator);
+    }
+
+    public List<List<Book>> get3Lists(List<Book> bookList) {
+        List<List<Book>> retList = new ArrayList<>();
+        for (int i = 0; i < bookList.size(); i = i + 2) {
+            retList.add(bookList.subList(i, i + 2));
+        }
+        return retList;
+    }
+
+    public Map<Integer, List<Book>> getYearBookMap(List<Book> bookList) {
+        Map<Integer, List<Book>> retMap = new HashMap<>();
+        for (Book book : bookList) {
+            List<Book> tmpList = new ArrayList<>();
+            bookList.stream().filter(b -> b.getYear() == book.getYear()).forEach(tmpList::add);
+            retMap.put(book.getYear(), tmpList);
+        }
+        return retMap;
+    }
+
+    public Map<Boolean, List<Book>> getBooksAfter2009Map(List<Book> bookList) {
+        return bookList.stream().collect(groupingBy(book -> book.getYear() > 2009, mapping(Function.identity(), toList())));
+    }
+
 }

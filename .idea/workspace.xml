@@ -2,25 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2202e4-54c4-4305-be4b-7c7e753e00c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/utils/BookFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/library/utils/BookFunctionsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/BookFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/BookFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/LoadAuthors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/LoadAuthors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/LoadBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/LoadCategories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/LoadCategories.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/LoadUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/LoadUsers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/SaveBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/SaveBooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library/Utils/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/utils/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/books.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Library/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Library/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Library/Utils/LoadBooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Library/Utils/LoadBooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/books.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/library/utils/BookFunctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/library/utils/BookFunctionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Library/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Library/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Library/Utils/BookFunctions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Library/Utils/BookFunctions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/library/utils/BookFunctionsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/library/utils/BookFunctionsTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,76 +28,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Programowanie2$BookFunctionsTest.ic" NAME="BookFunctionsTest Coverage Results" MODIFIED="1558176715988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>library.utils.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Programowanie2$BookFunctionsTest_add100YearsToEveryBook.ic" NAME="BookFunctionsTest.add100YearsToEveryBook Coverage Results" MODIFIED="1558187062245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>library.utils.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/library/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/a.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/Validator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#207#208#0" expanded="true" />
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadUsers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="178" selection-start-line="19" selection-start-column="178" selection-end-line="19" selection-end-column="178" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/BookFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
+            <state relative-caret-position="187">
+              <caret line="140" column="38" selection-start-line="140" selection-start-column="38" selection-end-line="140" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2422#2423#0" expanded="true" />
+                <element signature="e#2494#2495#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/library/utils/BookFunctionsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="120" column="59" selection-start-line="120" selection-start-column="59" selection-end-line="120" selection-end-column="59" />
+            <state relative-caret-position="469">
+              <caret line="158" column="79" selection-start-line="158" selection-start-column="79" selection-end-line="158" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#841#842#0" expanded="true" />
@@ -132,33 +78,33 @@
                 <element signature="e#2535#2536#0" expanded="true" />
                 <element signature="e#2599#2600#0" expanded="true" />
                 <element signature="e#2628#2629#0" expanded="true" />
-                <element signature="e#2732#2733#0" expanded="true" />
-                <element signature="e#2761#2762#0" expanded="true" />
+                <element signature="e#2774#2775#0" expanded="true" />
+                <element signature="e#2849#2850#0" expanded="true" />
                 <element signature="e#3276#3277#0" expanded="true" />
                 <element signature="e#3341#3342#0" expanded="true" />
+                <element signature="e#3404#3405#0" expanded="true" />
+                <element signature="e#3470#3471#0" expanded="true" />
+                <element signature="e#3725#3726#0" expanded="true" />
+                <element signature="e#3772#3773#0" expanded="true" />
+                <element signature="e#3983#3984#0" expanded="true" />
+                <element signature="e#4019#4020#0" expanded="true" />
+                <element signature="e#4098#4099#0" expanded="true" />
+                <element signature="e#4134#4135#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="353">
+              <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+              <folding>
+                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+              </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/books.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
         </entry>
       </file>
@@ -217,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Library/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Library/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/Utils/LoadUsers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/library/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/utils/Validator.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/utils/LoadUsers.java" />
         <option value="$PROJECT_DIR$/src/main/resources/a.csv" />
@@ -225,6 +170,7 @@
         <option value="$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java" />
         <option value="$PROJECT_DIR$/src/main/resources/books.csv" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/library/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/utils/BookFunctions.java" />
         <option value="$PROJECT_DIR$/src/test/java/library/utils/BookFunctionsTest.java" />
       </list>
@@ -348,6 +294,41 @@
               <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Programowanie2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="function" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -355,13 +336,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558172666333" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558187061270" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="coverage" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -402,7 +384,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookFunctionsTest.averageOfBookYearsStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookFunctionsTest.add100YearsToEveryBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Programowanie2" />
       <extension name="coverage">
         <pattern>
@@ -412,13 +394,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="library.utils" />
       <option name="MAIN_CLASS_NAME" value="library.utils.BookFunctionsTest" />
-      <option name="METHOD_NAME" value="averageOfBookYearsStream" />
+      <option name="METHOD_NAME" value="add100YearsToEveryBook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookFunctionsTest.isAllBooksAreNewerThan2000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookFunctionsTest.get3Lists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Programowanie2" />
       <extension name="coverage">
         <pattern>
@@ -428,13 +410,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="library.utils" />
       <option name="MAIN_CLASS_NAME" value="library.utils.BookFunctionsTest" />
-      <option name="METHOD_NAME" value="isAllBooksAreNewerThan2000" />
+      <option name="METHOD_NAME" value="get3Lists" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookFunctionsTest.isAllBooksAreNewerThan2000Stream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookFunctionsTest.getBooksAfter2009Map" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Programowanie2" />
       <extension name="coverage">
         <pattern>
@@ -444,13 +426,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="library.utils" />
       <option name="MAIN_CLASS_NAME" value="library.utils.BookFunctionsTest" />
-      <option name="METHOD_NAME" value="isAllBooksAreNewerThan2000Stream" />
+      <option name="METHOD_NAME" value="getBooksAfter2009Map" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookFunctionsTest.isThereAnyBookBefore2003" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookFunctionsTest.getYearBookMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Programowanie2" />
       <extension name="coverage">
         <pattern>
@@ -460,7 +442,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="library.utils" />
       <option name="MAIN_CLASS_NAME" value="library.utils.BookFunctionsTest" />
-      <option name="METHOD_NAME" value="isThereAnyBookBefore2003" />
+      <option name="METHOD_NAME" value="getYearBookMap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -469,10 +451,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BookFunctionsTest" />
-        <item itemvalue="JUnit.BookFunctionsTest.isAllBooksAreNewerThan2000Stream" />
-        <item itemvalue="JUnit.BookFunctionsTest.isAllBooksAreNewerThan2000" />
-        <item itemvalue="JUnit.BookFunctionsTest.isThereAnyBookBefore2003" />
-        <item itemvalue="JUnit.BookFunctionsTest.averageOfBookYearsStream" />
+        <item itemvalue="JUnit.BookFunctionsTest.add100YearsToEveryBook" />
+        <item itemvalue="JUnit.BookFunctionsTest.getBooksAfter2009Map" />
+        <item itemvalue="JUnit.BookFunctionsTest.getYearBookMap" />
+        <item itemvalue="JUnit.BookFunctionsTest.get3Lists" />
       </list>
     </recent_temporary>
   </component>
@@ -490,35 +472,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookFunctionsTest_findOldestStream - 2019.05.18 at 11h 05m 31s.xml">
-      <configuration name="BookFunctionsTest.findOldestStream" configurationId="JUnit" />
+    <history-entry file="BookFunctionsTest_getYearBookMap - 2019.05.18 at 14h 22m 31s.xml">
+      <configuration name="BookFunctionsTest.getYearBookMap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookFunctionsTest_findYoungestBook - 2019.05.18 at 11h 06m 15s.xml">
-      <configuration name="BookFunctionsTest.findYoungestBook" configurationId="JUnit" />
+    <history-entry file="BookFunctionsTest_getYearBookMap - 2019.05.18 at 14h 22m 52s.xml">
+      <configuration name="BookFunctionsTest.getYearBookMap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookFunctionsTest_findYoungestBookStream - 2019.05.18 at 11h 06m 18s.xml">
-      <configuration name="BookFunctionsTest.findYoungestBookStream" configurationId="JUnit" />
+    <history-entry file="BookFunctionsTest - 2019.05.18 at 14h 23m 03s.xml">
+      <configuration name="BookFunctionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookFunctionsTest_sumOfYears - 2019.05.18 at 11h 08m 00s.xml">
-      <configuration name="BookFunctionsTest.sumOfYears" configurationId="JUnit" />
+    <history-entry file="BookFunctionsTest_getBooksAfter2009Map - 2019.05.18 at 14h 29m 44s.xml">
+      <configuration name="BookFunctionsTest.getBooksAfter2009Map" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookFunctionsTest_sumOfYearsStream - 2019.05.18 at 11h 08m 03s.xml">
-      <configuration name="BookFunctionsTest.sumOfYearsStream" configurationId="JUnit" />
+    <history-entry file="BookFunctionsTest_getBooksAfter2009Map - 2019.05.18 at 14h 30m 21s.xml">
+      <configuration name="BookFunctionsTest.getBooksAfter2009Map" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookFunctionsTest_averageOfBookYears - 2019.05.18 at 11h 10m 38s.xml">
-      <configuration name="BookFunctionsTest.averageOfBookYears" configurationId="JUnit" />
+    <history-entry file="BookFunctionsTest_getBooksAfter2009Map - 2019.05.18 at 15h 09m 55s.xml">
+      <configuration name="BookFunctionsTest.getBooksAfter2009Map" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookFunctionsTest_averageOfBookYears - 2019.05.18 at 11h 35m 30s.xml">
-      <configuration name="BookFunctionsTest.averageOfBookYears" configurationId="JUnit" />
+    <history-entry file="BookFunctionsTest_getBooksAfter2009Map - 2019.05.18 at 15h 11m 03s.xml">
+      <configuration name="BookFunctionsTest.getBooksAfter2009Map" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookFunctionsTest_averageOfBookYears - 2019.05.18 at 11h 37m 47s.xml">
-      <configuration name="BookFunctionsTest.averageOfBookYears" configurationId="JUnit" />
+    <history-entry file="BookFunctionsTest_getBooksAfter2009Map - 2019.05.18 at 15h 17m 46s.xml">
+      <configuration name="BookFunctionsTest.getBooksAfter2009Map" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookFunctionsTest_averageOfBookYears - 2019.05.18 at 11h 39m 57s.xml">
-      <configuration name="BookFunctionsTest.averageOfBookYears" configurationId="JUnit" />
+    <history-entry file="BookFunctionsTest_getBooksAfter2009Map - 2019.05.18 at 15h 19m 19s.xml">
+      <configuration name="BookFunctionsTest.getBooksAfter2009Map" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookFunctionsTest_averageOfBookYearsStream - 2019.05.18 at 11h 40m 21s.xml">
-      <configuration name="BookFunctionsTest.averageOfBookYearsStream" configurationId="JUnit" />
+    <history-entry file="BookFunctionsTest_add100YearsToEveryBook - 2019.05.18 at 15h 37m 13s.xml">
+      <configuration name="BookFunctionsTest.add100YearsToEveryBook" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -534,7 +516,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26972282" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13859275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -542,6 +524,7 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.32936078" />
@@ -553,6 +536,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50159913" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -694,17 +678,6 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/library/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
-          <folding>
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -735,16 +708,6 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/books.csv___jb_old___">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -759,6 +722,13 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/library/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -769,28 +739,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/LoadBooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="374">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/function/Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/library/utils/BookFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
+        <state relative-caret-position="187">
+          <caret line="140" column="38" selection-start-line="140" selection-start-column="38" selection-end-line="140" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2422#2423#0" expanded="true" />
+            <element signature="e#2494#2495#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/library/utils/BookFunctionsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="120" column="59" selection-start-line="120" selection-start-column="59" selection-end-line="120" selection-end-column="59" />
+        <state relative-caret-position="469">
+          <caret line="158" column="79" selection-start-line="158" selection-start-column="79" selection-end-line="158" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#841#842#0" expanded="true" />
@@ -813,10 +804,18 @@
             <element signature="e#2535#2536#0" expanded="true" />
             <element signature="e#2599#2600#0" expanded="true" />
             <element signature="e#2628#2629#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2761#2762#0" expanded="true" />
+            <element signature="e#2774#2775#0" expanded="true" />
+            <element signature="e#2849#2850#0" expanded="true" />
             <element signature="e#3276#3277#0" expanded="true" />
             <element signature="e#3341#3342#0" expanded="true" />
+            <element signature="e#3404#3405#0" expanded="true" />
+            <element signature="e#3470#3471#0" expanded="true" />
+            <element signature="e#3725#3726#0" expanded="true" />
+            <element signature="e#3772#3773#0" expanded="true" />
+            <element signature="e#3983#3984#0" expanded="true" />
+            <element signature="e#4019#4020#0" expanded="true" />
+            <element signature="e#4098#4099#0" expanded="true" />
+            <element signature="e#4134#4135#0" expanded="true" />
           </folding>
         </state>
       </provider>

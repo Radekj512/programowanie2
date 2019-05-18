@@ -5,11 +5,10 @@ import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
 
-
-import static org.assertj.core.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.*;
 
 public class BookFunctionsTest {
@@ -35,8 +34,8 @@ public class BookFunctionsTest {
 
     @Test
     public void findIsbnStram() {
-        assertEquals(bookList.get(1), sut.findIsbnStram("456", bookList));
-        assertNotEquals(bookList.get(0), sut.findIsbnStram("456", bookList));
+        assertEquals(bookList.get(1), sut.findIsbnStream("456", bookList));
+        assertNotEquals(bookList.get(0), sut.findIsbnStream("456", bookList));
     }
 
     @Test
@@ -100,7 +99,7 @@ public class BookFunctionsTest {
 
     @Test
     public void isAllBooksAreNewerThan2000Stream() {
-        assertEquals(false, sut.isAllBooksAreNewerThan2000Stream(bookList));
+        assertFalse(sut.isAllBooksAreNewerThan2000Stream(bookList));
     }
 
     @Test
@@ -124,5 +123,38 @@ public class BookFunctionsTest {
     @Test
     public void isThereAnyBookBefore2003Stream() {
         assertTrue(sut.isThereAnyBookBefore2003Stream(bookList));
+    }
+
+
+    @Test
+    public void getBooksWithTitleStartingWithCAndYoungerThan2007() {
+        assertThat(sut.getBooksWithTitleStartingWithCAndYoungerThan2007(bookList)).hasSize(0);
+    }
+
+    @Test
+    public void sortBooksByYearDescending() {
+        sut.sortBooksByYearDescending(bookList);
+    }
+
+    @Test
+    public void get3Lists() {
+        System.out.println(sut.get3Lists(bookList));
+        assertThat(sut.get3Lists(bookList)).hasSize(3);
+    }
+
+    @Test
+    public void getYearBookMap() {
+        System.out.println(sut.getYearBookMap(bookList));
+    }
+
+    @Test
+    public void getBooksAfter2009Map() {
+        System.out.println(sut.getBooksAfter2009Map(bookList));
+    }
+
+    @Test
+    public void add100YearsToEveryBook() {
+        assertThat(sut.add100YearsToEveryBook(bookList.subList(0,2))).extracting("year").contains(2103,2098);
+
     }
 }
