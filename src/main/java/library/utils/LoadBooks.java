@@ -21,7 +21,7 @@ public class LoadBooks {
 
     {
         //Path path = Paths.get("src", "main", "resources", "books.csv");
-        Path path = Paths.get("D:\\Projekty_java\\Programowanie2\\src\\main\\resources\\books.csv");
+        Path path = Paths.get("C:\\Programowanie\\Programowanie2\\src\\main\\resources\\books.csv");
 
         try {
             //List<Author> authorsList = new ArrayList<>();

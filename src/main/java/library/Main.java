@@ -2,16 +2,17 @@ package library;
 
 import library.utils.*;
 
+
 import java.io.Console;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
-<<<<<<< HEAD:src/main/java/Library/Main.java
-
-=======
->>>>>>> master:src/main/java/library/Main.java
 
 public class Main {
     private static LoadBooks loadBooks = new LoadBooks();
@@ -23,18 +24,18 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
+        //6connecttoDB();
         mainApp();
     }
 
     public static void mainApp() {
 
-        boolean signedIn = false;
+        /*boolean signedIn = false;
         if (!users.isEmpty()) {
             do {
                 signedIn = signIn();
             } while (!signedIn);
-        }
+        }*/
         int option = 0;
         do {
             printMenu();
@@ -148,6 +149,8 @@ public class Main {
     }
 
     public static void addBook() {
+
+        //String query = "INSERT INTO users(name, lastName, email, password) VALUES (\"Jan\", \"Kowalski\", \"kowalski@gmail.com\", \"haslo\");";
         System.out.println("Dodawanie nowej książki\n");
         String title;
         String ibsn;
@@ -220,6 +223,35 @@ public class Main {
         if (SaveBooks.saveBooksToCsv(books, path)) {
             System.out.println("Lista została zapisana do pliku " + path.getFileName());
         }
+    }
+
+    public static void connecttoDB(){
+        //localhost:3306
+        String server = "jdbc:mysql://localhost:3306/library?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+        String username = "root";
+        String password = "mysqlpassword1";
+        String driver = "com.mysql.cj.jdbc.Driver";
+
+        Connection connection;
+        Statement statement;
+        String query = "INSERT INTO users(name, lastName, email, password) VALUES (\"Jan\", \"Kowalski\", \"kowalski@gmail.com\", \"haslo\");";
+
+        try {
+            Class.forName(driver).newInstance();
+            connection = DriverManager.getConnection(server, username, password);
+            statement = connection.createStatement();
+            //statement.executeUpdate(query);
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
     }
 
 
