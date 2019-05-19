@@ -65,6 +65,12 @@ public class Book {
             return "";
         }
     }
+    public String getBinding(){
+        return printBinding();
+    }
+    public String getCategory(){
+        return category.toString();
+    }
     public String toPrintFormat(){
         StringBuilder s = new StringBuilder();
         s.append("ID: ").append(id).append("\n");
@@ -82,5 +88,9 @@ public class Book {
     @Override
     public String toString() {
         return ""+title + " " + ibsn + " " + year;
+    }
+
+    public List<Author> getAuthors() {
+        return authors;
     }
 }

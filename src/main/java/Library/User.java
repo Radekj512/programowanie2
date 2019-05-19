@@ -39,6 +39,10 @@ public class User {
         return password;
     }
 
+    public static int getId() {
+        return id;
+    }
+
     public void addToFile() {
         String firstUser = id + ";" + name + ";" + lastName + ";" + email + ";" + password;
         String nextUser = "\n" + id + ";" + name + ";" + lastName + ";" + email + ";" + password;

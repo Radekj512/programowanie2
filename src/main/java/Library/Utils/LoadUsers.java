@@ -12,7 +12,7 @@ import java.util.List;
 public class LoadUsers {
     private List<User> usersList = new ArrayList<>();
     {
-        Path path = Paths.get("src", "main", "resources", "users.csv");
+        Path path = Paths.get("D:\\Projekty_java\\Programowanie2\\src\\main\\resources\\users.csv");
 
         try {
             Files.lines(path).filter(line -> !line.isEmpty())

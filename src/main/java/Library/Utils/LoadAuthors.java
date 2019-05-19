@@ -14,7 +14,7 @@ public class LoadAuthors {
     private List<Author> authors = new ArrayList<>();
 
     {
-        Path path = Paths.get("src", "main", "resources", "authors.csv");
+        Path path = Paths.get("D:\\Projekty_java\\Programowanie2\\src\\main\\resources\\authors.csv");
         try {
             Files.lines(path).map(line -> line.split(";"))
                     .forEach(author -> authors.add(new Author(Integer.parseInt(author[0]), author[1], Integer.parseInt(author[2]))));

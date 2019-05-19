@@ -1,5 +1,6 @@
 package library.utils;
 
+import com.google.common.collect.Lists;
 import com.sun.org.apache.xpath.internal.operations.Bool;
 import library.Book;
 
@@ -164,6 +165,7 @@ public class BookFunctions {
         for (int i = 0; i < bookList.size(); i = i + 2) {
             retList.add(bookList.subList(i, i + 2));
         }
+        //retList = Lists.partition(bookList, 2); GUAVA
         return retList;
     }
 

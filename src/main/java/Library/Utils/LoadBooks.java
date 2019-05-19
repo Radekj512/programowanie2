@@ -20,7 +20,8 @@ public class LoadBooks {
     private List<Category> categories = new LoadCategories().getCategoriesList();
 
     {
-        Path path = Paths.get("src", "main", "resources", "books.csv");
+        //Path path = Paths.get("src", "main", "resources", "books.csv");
+        Path path = Paths.get("D:\\Projekty_java\\Programowanie2\\src\\main\\resources\\books.csv");
 
         try {
             //List<Author> authorsList = new ArrayList<>();
@@ -34,8 +35,8 @@ public class LoadBooks {
                             getAuthors(book[5]),
                             getCategory(book[6]))));
         } catch (IOException e) {
-            System.out.println("Failed to load file " + path.getFileName().toString());
-            // e.printStackTrace();
+            System.out.println("Failed to load file " + path.getFileName().toString() + "  " + e.getMessage());
+             e.printStackTrace();
         }
     }
 
