@@ -1,4 +1,4 @@
-package Library;
+package library;
 
 public class Category {
 private  int id;
@@ -15,8 +15,12 @@ private int priority;
         return id;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public String toString() {
-        return name;
+        return "" + id + ". "+name;
     }
 }

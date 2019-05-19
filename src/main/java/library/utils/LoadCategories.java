@@ -1,7 +1,6 @@
-package Library.Utils;
+package library.utils;
 
-import Library.Author;
-import Library.Category;
+import library.Category;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -14,7 +13,7 @@ public class LoadCategories {
     private List<Category> categories = new ArrayList<>();
 
     {
-        Path path = Paths.get("src", "main", "resources", "categories.csv");
+        Path path = Paths.get("D:\\Projekty_java\\Programowanie2\\src\\main\\resources\\categories.csv");
         try {
             Files.lines(path).map(line -> line.split(";"))
                     .forEach(category -> categories.add(new Category(Integer.parseInt(category[0]), category[1], Integer.parseInt(category[2]))));

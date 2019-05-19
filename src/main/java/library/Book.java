@@ -1,4 +1,4 @@
-package Library;
+package library;
 
 import java.util.List;
 
@@ -65,9 +65,14 @@ public class Book {
             return "";
         }
     }
+    public String getBinding(){
+        return printBinding();
+    }
+    public String getCategory(){
+        return category.toString();
+    }
     public String toPrintFormat(){
         StringBuilder s = new StringBuilder();
-
         s.append("ID: ").append(id).append("\n");
         s.append("Tytuł: ").append(title).append("\n");
         s.append("ibsn: ").append(ibsn).append("\n");
@@ -83,5 +88,9 @@ public class Book {
     @Override
     public String toString() {
         return ""+title + " " + ibsn + " " + year;
+    }
+
+    public List<Author> getAuthors() {
+        return authors;
     }
 }

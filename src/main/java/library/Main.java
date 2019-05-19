@@ -1,6 +1,6 @@
-package Library;
+package library;
 
-import Library.Utils.*;
+import library.utils.*;
 
 import java.io.Console;
 import java.nio.file.Path;
@@ -8,7 +8,10 @@ import java.nio.file.Paths;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
+<<<<<<< HEAD:src/main/java/Library/Main.java
 
+=======
+>>>>>>> master:src/main/java/library/Main.java
 
 public class Main {
     private static LoadBooks loadBooks = new LoadBooks();
@@ -99,7 +102,10 @@ public class Main {
         if (!users.isEmpty()) {
             StringBuilder s = new StringBuilder();
             s.append("Imie\tNazwisko\tEmail\tHaslo\n");
-            users.forEach(user -> s.append(user.getName() + "\t" + user.getLastName() + "\t" + user.getEmail() + "\t" + user.getPassword() + "\n"));
+            users.forEach(user -> s.append(user.getName()).append("\t")
+                    .append(user.getLastName()).append("\t")
+                    .append(user.getEmail()).append("\t")
+                    .append(user.getPassword()).append("\n"));
             System.out.println(s.toString());
         } else {
             System.out.println("Brak uzytkownikow w bazie");
@@ -148,7 +154,7 @@ public class Main {
         int year;
         String binding;
         int catId;
-        Book bookWithMaxId = books.stream().max(Comparator.comparing(Book::getId)).get();
+        Book bookWithMaxId = books.stream().max(Comparator.comparing(Book::getId)).orElse(null);
 
         System.out.print("Podaj tytuł ksiązki: ");
         title = scanner.nextLine();
@@ -165,11 +171,15 @@ public class Main {
         System.out.print("Podaj numer ID kategorii: ");
         catId = Integer.parseInt(scanner.nextLine());
 
-//        if (Validator.validateBook(title, ibsn, year, binding, authorsIds)) {
-            books.add(new Book(bookWithMaxId.getId() + 1, title, ibsn, year, binding, loadBooks.getAuthors(authorsIds), categories.get(catId)));
-//        } else {
-//            System.out.println("Podano błęne dane!");
-//        }
+        if (Validator.validateBook(title, ibsn, year, binding, authorsIds)) {
+            if (bookWithMaxId == null) {
+                books.add(new Book(1, title, ibsn, year, binding, loadBooks.getAuthors(authorsIds), categories.get(catId)));
+            } else {
+                books.add(new Book(bookWithMaxId.getId() + 1, title, ibsn, year, binding, loadBooks.getAuthors(authorsIds), categories.get(catId)));
+            }
+        } else {
+            System.out.println("Podano błęne dane!");
+        }
     }
 
     public static void deleteBook() {

@@ -1,4 +1,4 @@
-package Library;
+package library;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -37,6 +37,10 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    public static int getId() {
+        return id;
     }
 
     public void addToFile() {

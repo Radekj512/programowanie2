@@ -1,8 +1,8 @@
-package Library.Utils;
+package library.utils;
 
-import Library.Author;
-import Library.Book;
-import Library.Category;
+import library.Author;
+import library.Book;
+import library.Category;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -20,7 +20,8 @@ public class LoadBooks {
     private List<Category> categories = new LoadCategories().getCategoriesList();
 
     {
-        Path path = Paths.get("src", "main", "resources", "books.csv");
+        //Path path = Paths.get("src", "main", "resources", "books.csv");
+        Path path = Paths.get("D:\\Projekty_java\\Programowanie2\\src\\main\\resources\\books.csv");
 
         try {
             //List<Author> authorsList = new ArrayList<>();
@@ -34,8 +35,8 @@ public class LoadBooks {
                             getAuthors(book[5]),
                             getCategory(book[6]))));
         } catch (IOException e) {
-            System.out.println("Failed to load file " + path.getFileName().toString());
-            // e.printStackTrace();
+            System.out.println("Failed to load file " + path.getFileName().toString() + "  " + e.getMessage());
+             e.printStackTrace();
         }
     }
 
@@ -47,12 +48,12 @@ public class LoadBooks {
     }
 
     private Author findAuthor(int id) {
-        return authors.stream().filter(author -> author.getId() == id).findFirst().get();
+        return authors.stream().filter(author -> author.getId() == id).findFirst().orElse(null);
     }
 
     private Category getCategory(String id){
 
-        return categories.stream().filter(category -> category.getId() == Integer.parseInt(id)).findFirst().get();
+        return categories.stream().filter(category -> category.getId() == Integer.parseInt(id)).findFirst().orElse(null);
     }
 
     public List<Book> getList() {

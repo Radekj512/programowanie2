@@ -1,6 +1,6 @@
-package Library.Utils;
+package library.utils;
 
-import Library.Author;
+import library.Author;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,14 +8,13 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 public class LoadAuthors {
     private List<Author> authors = new ArrayList<>();
 
     {
-        Path path = Paths.get("src", "main", "resources", "authors.csv");
+        Path path = Paths.get("D:\\Projekty_java\\Programowanie2\\src\\main\\resources\\authors.csv");
         try {
             Files.lines(path).map(line -> line.split(";"))
                     .forEach(author -> authors.add(new Author(Integer.parseInt(author[0]), author[1], Integer.parseInt(author[2]))));
