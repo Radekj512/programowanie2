@@ -9,7 +9,7 @@ public class Connect_db {
     {
         if (con != null) return con;
         // get db, user, pass from settings file
-        return getConnection("library", "root", "mysqlpassword1");
+        return getConnection("LKZJ3Ic98j", "LKZJ3Ic98j", "lVtTIHxTvn");
     }
 
     private static Connection getConnection(String db_name,String user_name,String password)
@@ -17,7 +17,7 @@ public class Connect_db {
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con= DriverManager.getConnection("jdbc:mysql://localhost/"+db_name+"?user="+user_name+"&password="+password+"&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
+            con= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/"+db_name+"?user="+user_name+"&password="+password+"&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
         }
         catch(Exception e)
         {

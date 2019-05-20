@@ -4,6 +4,10 @@
 <%@ page import="javax.servlet.http.HttpServlet" %>
 <%@ page import="library.utils.Validator" %>
 <%@ page import="java.util.Comparator" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="library.utils.Connect_db" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.SQLException" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
@@ -27,22 +31,44 @@
     <select name="category">
         <%
             for (Category cat : categoryList) {%>
-        <option><%= cat.getName()%>
-        </option>
+        <option><%=cat.getName()%></option>
         <% }%>
     </select><br/>
     <input type="submit" name="submit" value="Dodaj">
 </form>
-<%} else {
-    String title = request.getParameter("title");
-    String isbn = request.getParameter("isbn");
-    int year = Integer.parseInt(request.getParameter("year"));
-    String cover = request.getParameter("cover");
-    //Category category = categoryList.get(categoryList.indexOf(request.getParameter("category")));
-    //Book bookWithMaxId = bookList.stream().max(java.util.Comparator.comparing(book -> book.getId())).orElse(null);
-if (Validator.validateBook(title,isbn,year,cover,"1")){
-        bookList.add(new Book(1, title, isbn, year, cover, null, null));}else{
-    System.out.println("blad");
+<%
+    } else {
+
+        String title = request.getParameter("title");
+        String isbn = request.getParameter("isbn");
+        int year = Integer.parseInt(request.getParameter("year"));
+        String cover = request.getParameter("cover");
+        Category cat = null;
+        for (Category c : categoryList) {
+            if (c.getName().equalsIgnoreCase(request.getParameter("category"))){
+                cat = c;
+            }
+        }
+        int catId = categoryList.indexOf(cat)+1;
+
+        String query = "INSERT INTO books(title, isbn, year, binding, authors_ids, category_id) VALUES('" + title + "','" + isbn + "'," + year + ",'" + cover + "', 1," + catId + ");";
+
+        if (Validator.validateBook(title, isbn, year, cover, "1")) {
+            //bookList.add(new Book(1, title, isbn, year, cover, null, null));}else{
+            Connection connection = Connect_db.getConnection();
+            Statement statement = null;
+            try {
+                statement = connection.createStatement();
+                if(statement.executeUpdate(query) > 0){
+                    %>Dodano nowa książkę<%
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+        } else {
+            %>Wprowadzono zle dane<%
         }
 
-}%>
+    }
+%>
