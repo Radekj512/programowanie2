@@ -1,9 +1,12 @@
 package library;
 
+import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
 public class Book {
     private int id;
+
+    @NotEmpty
     private String title;
     private String ibsn;
     private int year;
@@ -21,6 +24,7 @@ public class Book {
         this.authors = authorsIds;
         this.category = category;
     }
+    public Book(){}
 
     public int getId() {
         return id;
@@ -42,7 +46,7 @@ public class Book {
         this.year = year;
     }
 
-    private String getAuthorsIds(){
+    public String getAuthorsIds(){
         StringBuilder s = new StringBuilder();
         authors.forEach(author -> s.append(author.getId()).append(","));
         return s.toString();
@@ -66,10 +70,10 @@ public class Book {
         }
     }
     public String getBinding(){
-        return printBinding();
+        return binding;
     }
-    public String getCategory(){
-        return category.toString();
+    public Category getCategory(){
+        return category;
     }
     public String toPrintFormat(){
         StringBuilder s = new StringBuilder();
@@ -85,12 +89,46 @@ public class Book {
 
        // return "| " +id + "| "+ title + "\t|\t" + ibsn + "\t|\t" + year + "\t|\t" + binding+ "\t|\t" + authors +"\t|\t" + category+ "\t|\n";
     }
+
     @Override
     public String toString() {
-        return ""+title + " " + ibsn + " " + year;
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", ibsn='" + ibsn + '\'' +
+                ", year=" + year +
+                ", binding='" + binding + '\'' +
+                ", authors=" + authors +
+                ", category=" + category +
+                '}';
     }
 
     public List<Author> getAuthors() {
         return authors;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+
+    public void setBinding(String binding) {
+        this.binding = binding;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setIbsn(String ibsn) {
+        this.ibsn = ibsn;
+    }
+
+    public void setAuthors(List<Author> authors) {
+        this.authors = authors;
     }
 }

@@ -2,6 +2,8 @@ library\utils\LoadUsers.class
 library\utils\LoadBooks.class
 library\utils\addBook.class
 library\utils\Validator.class
+library\controllers\AddBookController.class
+library\controllers\BookController.class
 library\utils\LoadAuthors.class
 library\utils\BookFunctions.class
 library\User.class

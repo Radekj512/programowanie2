@@ -1,5 +1,7 @@
 package library.utils;
 
+import library.Book;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -51,6 +53,14 @@ public class Validator {
             return false;
         }
 
+    }
+    public static boolean validateBook(Book book){
+        if (validateYear(book.getYear()) && validateBindingType(book.getBinding())
+                && validateIbsn(book.getIbsn()) && validateTitle(book.getTitle()) && valideateAuthorsIds(book.getAuthorsIds())) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }

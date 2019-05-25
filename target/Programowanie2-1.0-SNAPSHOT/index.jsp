@@ -15,15 +15,13 @@
 <jsp:setProperty property="*" name="books"/>
 <jsp:useBean id="categories" class="library.utils.LoadCategories" scope="session"/>
 <jsp:setProperty name="categories" property="*"/>
-<% List<Book> bookList = books.getList();
-    List<Category> categoryList = categories.getCategoriesList();
-%>
+
 <center>
     <span style="color: gray; font-size: 48px; "> Księgarnia </span>
     <br /><br />
     <table border="2">
         <tr>
-            <td><a href="?page=bookList">Lista Książek</a></td>
+            <td><a href="/bookList">Lista Książek</a></td>
             <td><a href="?page=addBook">Dodaj nową książkę</a></td>
             <td><a href="?page=editBook">Edycja roku wydania książki</a></td>
             <td><a href="?page=deleteBook">Usuń książkę po nazwie</a></td>
@@ -37,7 +35,7 @@
     if (param != null){
         switch (param){
             case "bookList":
-                %><jsp:include page="bookList.jsp" /><%
+                %><jsp:include page="WEB-INF/jsp/bookList.jsp" /><%
                 break;
             case "addBook":
                 %><jsp:include page="addBook.jsp" /><%
@@ -55,11 +53,11 @@
                 %><jsp:include page="addUser.jsp" /><%
                 break;
             default:
-                %><jsp:include page="bookList.jsp" /><%
+                %><jsp:include page="WEB-INF/jsp/bookList.jsp" /><%
             break;
         }
     }else{
-        %><jsp:include page="bookList.jsp" />
+        %><jsp:include page="WEB-INF/jsp/bookList.jsp" />
     <%}%>
 
 

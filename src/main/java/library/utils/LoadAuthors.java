@@ -2,10 +2,10 @@ package library.utils;
 
 import library.Author;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,7 +13,27 @@ import java.util.stream.Collectors;
 public class LoadAuthors {
     private List<Author> authors = new ArrayList<>();
 
+
     {
+
+        String query = "SELECT * FROM authors;";
+        try {
+            Connection connection = Connect_db.getConnection();
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                authors.add(new Author(
+                        resultSet.getInt("ID"),
+                        resultSet.getString("name"),
+                        resultSet.getInt("age")
+                        ));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+    /*{
 
         Path path = Paths.get("C:\\Programowanie\\Programowanie2\\src\\main\\resources\\authors.csv");
 
@@ -24,7 +44,7 @@ public class LoadAuthors {
             System.out.println("Failed to load file " + path.getFileName().toString());
 //            e.printStackTrace();
         }
-    }
+    }*/
     public List<Integer> getAuthorsIds(){
         return authors.stream().map(author -> author.getId()).collect(Collectors.toList());
     }
