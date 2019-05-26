@@ -1,5 +1,7 @@
 package library;
 
+import library.utils.Validator;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -57,5 +59,8 @@ public class User {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    public boolean isValid() {
+        return (Validator.validateUser(this));
     }
 }

@@ -10,7 +10,10 @@ D:\Projekty_java\Programowanie2\src\main\java\library\utils\addBook.java
 D:\Projekty_java\Programowanie2\src\main\java\library\Author.java
 D:\Projekty_java\Programowanie2\src\main\java\library\Book.java
 D:\Projekty_java\Programowanie2\src\main\java\library\utils\BookFunctions.java
+D:\Projekty_java\Programowanie2\src\main\java\library\controllers\AddUserController.java
 D:\Projekty_java\Programowanie2\src\main\java\library\utils\Connect_db.java
+D:\Projekty_java\Programowanie2\src\main\java\library\controllers\UserListController.java
 D:\Projekty_java\Programowanie2\src\main\java\library\controllers\BookController.java
+D:\Projekty_java\Programowanie2\src\main\java\library\controllers\EditBookController.java
 D:\Projekty_java\Programowanie2\src\main\java\library\Main.java
 D:\Projekty_java\Programowanie2\src\main\java\library\utils\Validator.java

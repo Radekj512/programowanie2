@@ -4,10 +4,10 @@ import library.Author;
 import library.Book;
 import library.Category;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -20,7 +20,29 @@ public class LoadBooks {
     private List<Category> categories = new LoadCategories().getCategoriesList();
 
     {
-        //Path path = Paths.get("src", "main", "resources", "books.csv");
+
+        String query = "SELECT * FROM books;";
+        try {
+            Connection connection = Connect_db.getConnection();
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            int i = 1;
+            while (resultSet.next()) {
+
+                booksList.add(new Book(
+                        resultSet.getInt("ID"),
+                        resultSet.getString("title"),
+                        resultSet.getString("isbn"),
+                        resultSet.getInt("year"),
+                        resultSet.getString("binding"),
+                        getAuthors(resultSet.getString("authors_ids")),
+                        getCategory(resultSet.getInt("category_id"))
+                ));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        /*//Path path = Paths.get("src", "main", "resources", "books.csv");
         Path path = Paths.get("C:\\Programowanie\\Programowanie2\\src\\main\\resources\\books.csv");
 
         try {
@@ -37,7 +59,7 @@ public class LoadBooks {
         } catch (IOException e) {
             System.out.println("Failed to load file " + path.getFileName().toString() + "  " + e.getMessage());
              e.printStackTrace();
-        }
+        }*/
     }
 
     public List<Author> getAuthors(String authorsArrayIds) {
@@ -47,13 +69,15 @@ public class LoadBooks {
                 .collect(Collectors.toList());
     }
 
+
+
     private Author findAuthor(int id) {
         return authors.stream().filter(author -> author.getId() == id).findFirst().orElse(null);
     }
 
-    private Category getCategory(String id){
+    public Category getCategory(int id){
 
-        return categories.stream().filter(category -> category.getId() == Integer.parseInt(id)).findFirst().orElse(null);
+        return categories.stream().filter(category -> category.getId() == id).findFirst().orElse(null);
     }
 
     public List<Book> getList() {

@@ -27,21 +27,12 @@
         </tr>
         <tr>
             <td>Wybierz kategorie:</td>
-            <td><form:select path="category">
-                <c:forEach items="${catList}" var="category">
-                    <form:option value="${category}">${category.name}</form:option>
-                </c:forEach>
-            </form:select>
-            </td>
+            <td><form:select items="${catList}" path="category" multiple="false"/></td>
         </tr>
         <tr>
             <td>Wybierz autorów:</td>
             <td>
-                <c:forEach items="${authors}" var="author">
-                    <form:checkbox value="${author}" path="authors"/>
-                    ${author}
-                </c:forEach>
-            </td>
+                    <form:checkboxes path="authors" items="${authors}"/>
         </tr>
         <tr>
             <td><form:button type="submit" id="add-book">Dodaj książkę</form:button></td>

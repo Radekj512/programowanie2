@@ -2,8 +2,6 @@ package library;
 
 import library.utils.*;
 
-
-import java.io.Console;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.Connection;
@@ -174,7 +172,7 @@ public class Main {
         System.out.print("Podaj numer ID kategorii: ");
         catId = Integer.parseInt(scanner.nextLine());
 
-        if (Validator.validateBook(title, ibsn, year, binding, authorsIds)) {
+        if (Validator.validateBook(title, ibsn, year, binding)) {
             if (bookWithMaxId == null) {
                 books.add(new Book(1, title, ibsn, year, binding, loadBooks.getAuthors(authorsIds), categories.get(catId)));
             } else {

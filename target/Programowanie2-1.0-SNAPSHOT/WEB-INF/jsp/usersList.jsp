@@ -1,28 +1,21 @@
-<%@ page import="java.util.List" %>
-<%@ page import="library.Book" %>
-<%@ page import="library.User" %>
+<%@ page isELIgnored="false"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-    <jsp:useBean id="users" class="library.utils.LoadUsers" scope="session"></jsp:useBean>
-    <jsp:setProperty property="*" name="test"/>
-    <% List<User> userList = users.getList(); %>
-    <table border="1">
+
+<table border="1">
+    <tr>
+        <td>Imie</td>
+        <td>Nazwisko</td>
+        <td>E-mail</td>
+    </tr>
+
+    <c:forEach items="${users}" var="user">
         <tr>
-            <td>Imie</td>
-            <td>Nazwisko</td>
-            <td>E-mail</td>
+            <td><c:out value="${user.name}"/></td>
+            <td><c:out value="${user.lastName}"/></td>
+            <td><c:out value="${user.email}"/></td>
         </tr>
-
-        <% for (User user : userList) { %>
-        <tr>
-            <td><%=user.getName()%>
-            </td>
-            <td><%=user.getLastName()%>
-            </td>
-            <td><%=user.getEmail()%>
-            </td>
-
-        </tr>
-        <%}%>
+    </c:forEach>
 
 
-    </table>
+</table>

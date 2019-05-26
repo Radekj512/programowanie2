@@ -75,6 +75,7 @@ public class Book {
     public Category getCategory(){
         return category;
     }
+
     public String toPrintFormat(){
         StringBuilder s = new StringBuilder();
         s.append("ID: ").append(id).append("\n");
@@ -131,4 +132,7 @@ public class Book {
     public void setAuthors(List<Author> authors) {
         this.authors = authors;
     }
+
+
+
 }

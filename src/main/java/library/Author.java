@@ -5,6 +5,10 @@ public class Author {
     private String name;
     private int age;
 
+    public Author(String name) {
+        this.name = name;
+    }
+
     public Author(int id, String name, int age) {
         this.id = id;
         this.name = name;
@@ -39,4 +43,5 @@ public class Author {
     public String toString() {
         return name;
     }
+
 }

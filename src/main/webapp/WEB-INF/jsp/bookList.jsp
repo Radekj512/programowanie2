@@ -5,7 +5,7 @@
 
 <table border="1">
     <tr>
-        <td>L.p.</td>
+        <td>ID</td>
         <td>Tytul</td>
         <td>ISBN</td>
         <td>Rok wydania</td>

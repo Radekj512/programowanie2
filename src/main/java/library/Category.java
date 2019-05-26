@@ -12,6 +12,10 @@ private int priority;
         this.name = name;
         this.priority = priority;
     }
+    public Category(String name){
+        this.name = name;
+    }
+    public Category(){}
 
     public int getId() {
         return id;
@@ -23,7 +27,7 @@ private int priority;
 
     @Override
     public String toString() {
-        return "" + id + ". "+name;
+        return name;
     }
 
     @Override
@@ -54,4 +58,5 @@ private int priority;
     public void setPriority(int priority) {
         this.priority = priority;
     }
+
 }
