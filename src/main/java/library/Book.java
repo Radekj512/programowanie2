@@ -1,5 +1,7 @@
 package library;
 
+import library.utils.Validator;
+
 import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
@@ -66,11 +68,11 @@ public class Book {
         }else if(binding.equalsIgnoreCase("m")){
             return "Miękka";
         }else{
-            return "";
+            return binding;
         }
     }
     public String getBinding(){
-        return binding;
+       return binding;
     }
     public Category getCategory(){
         return category;
@@ -133,6 +135,8 @@ public class Book {
         this.authors = authors;
     }
 
-
+    public boolean isValid() {
+        return (Validator.validateBook(this));
+    }
 
 }

@@ -12,7 +12,8 @@
         <td>Rodzaj okladki</td>
         <td>Autorzy</td>
         <td>Kategoria</td>
-        <td>Edytuj rok</td>
+        <td>Edytuj książkę</td>
+        <td>Usuń książkę</td>
     </tr>
     <c:forEach items="${books}" var="book">
         <tr>
@@ -23,7 +24,8 @@
             <td><c:out value="${book.binding}" /></td>
             <td><c:out value="${book.authors}" /></td>
             <td><c:out value="${book.category}" /></td>
-            <td><a href="${book.id}">Zmień</a></td>
+            <td><a href="editBook/${book.id}">Zmień</a></td>
+            <td><a href="deleteBook/${book.id}">Usuń</a> </td>
         </tr>
     </c:forEach>
 

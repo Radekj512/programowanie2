@@ -5,11 +5,11 @@
 
 <table border="1">
     <tr>
-        <td>ID</td>
-        <td>Tytul</td>
-        <td>ISBN</td>
-        <td>Rok wydania</td>
-        <td>Rodzaj okladki</td>
+        <td><a href="bookList?sortby=ID">ID</td>
+        <td><a href="bookList?sortby=title"> Tytul</a></td>
+        <td><a href="bookList?sortby=isbn">ISBN</a></td>
+        <td><a href="bookList?sortby=year">Rok wydania</a></td>
+        <td><a href="bookList?sortby=binding">Rodzaj okladki</a></td>
         <td>Autorzy</td>
         <td>Kategoria</td>
     </tr>

@@ -4,9 +4,9 @@
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
+
 <span style="color: gray; font-size: 36px; "> Dodawanie nowej książki </span>
 <br/>
-
 <table>
     <form:form modelAttribute="addBookForm" action="addBook" method="POST">
         <tr>
@@ -39,3 +39,4 @@
         </tr>
     </form:form>
 </table>
+

@@ -20,8 +20,7 @@ public class LoadBooks {
     private List<Category> categories = new LoadCategories().getCategoriesList();
 
     {
-
-        String query = "SELECT * FROM books;";
+        String query = "SELECT * FROM `books`;";
         try {
             Connection connection = Connect_db.getConnection();
             Statement statement = connection.createStatement();
