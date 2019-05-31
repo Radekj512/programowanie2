@@ -19,7 +19,7 @@
             <td><c:out value="${book.title}" /></td>
             <td><c:out value="${book.ibsn}" /></td>
             <td><c:out value="${book.year}" /></td>
-            <td><c:out value="${book.binding}" /></td>
+            <td><c:out value="${book.printBinding()}" /></td>
             <td><c:out value="${book.authors}" /></td>
             <td><c:out value="${book.category}" /></td>
         </tr>

@@ -62,7 +62,7 @@ public class Book {
         return ""+id+";"+title+";"+ibsn+";"+year+";"+binding+";"+getAuthorsIds()+";"+getCategoryId();
     }
 
-    private String printBinding(){
+    public String printBinding(){
         if (binding.equalsIgnoreCase("T")){
             return "Twarda";
         }else if(binding.equalsIgnoreCase("m")){

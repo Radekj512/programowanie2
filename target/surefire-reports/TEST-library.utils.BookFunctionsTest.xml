@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="24" failures="0" name="library.utils.BookFunctionsTest" time="0.135" errors="0" skipped="0">
+<testsuite tests="24" failures="0" name="library.utils.BookFunctionsTest" time="0.131" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
@@ -27,10 +27,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Program Files\Java\jdk1.8.0_201\apache-maven-3.6.0\bin\m2.conf"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.2\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1250"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_201\apache-maven-3.6.0\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\MongoDB\Server\4.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;."/>
-    <property name="maven.conf" value="C:\Program Files\Java\jdk1.8.0_201\apache-maven-3.6.0/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -41,7 +40,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="roszk"/>
-    <property name="java.class.path" value="C:\Program Files\Java\jdk1.8.0_201\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.2\lib\idea_rt.jar"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.2\lib\idea_rt.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
@@ -55,7 +54,7 @@
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Program Files\Java\jdk1.8.0_201\apache-maven-3.6.0"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.2\plugins\maven\lib\maven3"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -63,28 +62,28 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="library.utils.BookFunctionsTest" name="howManyBooksAfter2007Stream" time="0.043"/>
-  <testcase classname="library.utils.BookFunctionsTest" name="findIsbnStram" time="0.001"/>
+  <testcase classname="library.utils.BookFunctionsTest" name="howManyBooksAfter2007Stream" time="0.044"/>
+  <testcase classname="library.utils.BookFunctionsTest" name="findIsbnStram" time="0"/>
   <testcase classname="library.utils.BookFunctionsTest" name="findYoungestBookStream" time="0.003"/>
-  <testcase classname="library.utils.BookFunctionsTest" name="sortBooksByYearDescending" time="0"/>
-  <testcase classname="library.utils.BookFunctionsTest" name="sumOfYears" time="0.001"/>
+  <testcase classname="library.utils.BookFunctionsTest" name="sortBooksByYearDescending" time="0.001"/>
+  <testcase classname="library.utils.BookFunctionsTest" name="sumOfYears" time="0"/>
   <testcase classname="library.utils.BookFunctionsTest" name="findIsbn" time="0"/>
-  <testcase classname="library.utils.BookFunctionsTest" name="averageOfBookYearsStream" time="0.055"/>
+  <testcase classname="library.utils.BookFunctionsTest" name="averageOfBookYearsStream" time="0.051"/>
   <testcase classname="library.utils.BookFunctionsTest" name="isThereAnyBookBefore2003Stream" time="0.001"/>
   <testcase classname="library.utils.BookFunctionsTest" name="howManyBooksAfter2007" time="0"/>
   <testcase classname="library.utils.BookFunctionsTest" name="getBooksAfter2009Map" time="0.005"/>
   <testcase classname="library.utils.BookFunctionsTest" name="get3Lists" time="0.011"/>
   <testcase classname="library.utils.BookFunctionsTest" name="findYoungestBook" time="0"/>
-  <testcase classname="library.utils.BookFunctionsTest" name="add100YearsToEveryBook" time="0.006"/>
-  <testcase classname="library.utils.BookFunctionsTest" name="isThereAnyBookBefore2003" time="0.001"/>
+  <testcase classname="library.utils.BookFunctionsTest" name="add100YearsToEveryBook" time="0.01"/>
+  <testcase classname="library.utils.BookFunctionsTest" name="isThereAnyBookBefore2003" time="0"/>
   <testcase classname="library.utils.BookFunctionsTest" name="sumOfYearsStream" time="0.002"/>
   <testcase classname="library.utils.BookFunctionsTest" name="isAllBooksAreNewerThan2000Stream" time="0.001"/>
-  <testcase classname="library.utils.BookFunctionsTest" name="findOldestStream" time="0.001"/>
+  <testcase classname="library.utils.BookFunctionsTest" name="findOldestStream" time="0"/>
   <testcase classname="library.utils.BookFunctionsTest" name="getLastTwoBooksStream" time="0.001"/>
   <testcase classname="library.utils.BookFunctionsTest" name="getBooksWithTitleStartingWithCAndYoungerThan2007" time="0"/>
   <testcase classname="library.utils.BookFunctionsTest" name="getLastTwoBooks" time="0"/>
-  <testcase classname="library.utils.BookFunctionsTest" name="isAllBooksAreNewerThan2000" time="0.001"/>
+  <testcase classname="library.utils.BookFunctionsTest" name="isAllBooksAreNewerThan2000" time="0"/>
   <testcase classname="library.utils.BookFunctionsTest" name="getYearBookMap" time="0.001"/>
   <testcase classname="library.utils.BookFunctionsTest" name="findOldestBook" time="0"/>
-  <testcase classname="library.utils.BookFunctionsTest" name="averageOfBookYears" time="0.001"/>
+  <testcase classname="library.utils.BookFunctionsTest" name="averageOfBookYears" time="0"/>
 </testsuite>
